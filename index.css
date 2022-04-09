@@ -9,6 +9,14 @@ body {
 
 }
 
+button{
+  background: linear-gradient(to right, magenta, darkorchid) 1;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, magenta, darkorchid) 1;
+  font-family: 'Ubuntu', serif;
+  /* background: linear-gradient(to right, magenta, darkorchid) 1; */
+}
 
 
 img {
@@ -100,6 +108,8 @@ a {
     color: #1792d2;
 }
 
+
+
 strong {
     font-weight: 700;
 }
@@ -119,7 +129,7 @@ img {
     float:right;
     width: 400px;
     height: 500px;
-    box-shadow: 10px 10px 5px 0px rgba(183,35,186,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(190, 41, 190, 0.75);
 }
 
 .textclass {
@@ -322,7 +332,7 @@ img {
   position: absolute;
   display: flex;
   width: 90%;
-  height: 100px;
+  height: 200px;
   /* bottom: 40; */
   padding-top: 900px;
   
@@ -337,16 +347,18 @@ img {
   margin-left: 500px;
   background: magenta;
   font-size: 40px;
-  
 }
 
-
+.link{
+  color: black;
+  font-weight: 400;
+}
 .cards {
   display: flex;
   padding: 3rem;
   margin-bottom: 2rem;
   width: 100%;
-  height: 300px;
+  height: 400px;
   @media(min-width: 40rem) {
     width: 50%;
   }
@@ -373,23 +385,28 @@ img {
     padding: 1rem;
     line-height: 1.5em;
     color: black;
+    margin-bottom: -20px;
+    background: white;
+    /* background-color: green; */
+    height: 500px;
   }
   .card-title {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.1em;
     color: black;
     margin-bottom: 0.2em;
   }
 
   .card-image{
-    height: 400px;
-    overflow: hidden;
+    /* height: 20px; */
+    /* overflow: hidden; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 6px 6px 0px 0px;
     opacity: 0.91;
-    background-image: url("deco.jpg");
+    /* background-color: green; */
+    /* background-image: url("deco.jpg"); */
   }
 
 .card-intro{
@@ -428,7 +445,7 @@ img {
 }
 
 .footer {
-  background: black;
+  background:  black;
   color: white;
   text-align: center;
   align-items: center;
@@ -479,7 +496,9 @@ img {
   gap: 4rem;
 }
 
-
+.image-one{
+  height: 250px;
+}
 @media only screen and (max-width: 650px) {
   .footer{
     bottom: -160rem;
@@ -491,3 +510,4 @@ img {
     gap: 4rem;
   }
 }  
+
